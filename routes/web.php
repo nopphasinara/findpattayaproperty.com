@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('listings', '\App\Models\Listing\Controllers\ListingController@index')
+  ->name('listings');
