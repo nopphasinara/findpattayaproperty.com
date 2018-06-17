@@ -20,6 +20,8 @@ class ListingController extends Controller
     
     public function index()
     {
-      echo '<pre>'; print_r($this->model->all()->toArray()); echo '</pre>';
+      return view('frontend.pages.listings')->with([
+        'listings' => $this->model->all(),
+      ]);
     }
 }
