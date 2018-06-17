@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 //
-use \App\Models\Listing\Listing;
+use App\Models\Listing\Listing;
 
 class ListingController extends Controller
 {
